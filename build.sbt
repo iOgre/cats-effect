@@ -5,6 +5,16 @@ lazy val root = project
   .settings(
     name := "cats-effect",
     version := "0.1.0",
+    scalacOptions ++= Seq(
+    "-encoding",
+    "UTF-8",
+    "-deprecation",
+    "-feature",
+    "-unchecked",
+    "-language:implicitConversions",
+    "-language:higherKinds",
+    "-language:postfixOps"
+      ),
 
     scalaVersion := scala3Version,
 
