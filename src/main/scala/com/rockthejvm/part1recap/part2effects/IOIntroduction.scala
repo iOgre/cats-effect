@@ -113,7 +113,7 @@ object IOIntroduction {
     }
   }
 
-  def fibobacci(n: Int): IO[BigInt] = 
+  def fibobacci(n: Int): IO[BigInt] =  
     if(n <= 2) IO(1)
     for {
       last <- IO(fibobacci(n - 1)).flatMap(x => x)
